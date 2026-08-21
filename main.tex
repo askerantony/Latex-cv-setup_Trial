@@ -1,16 +1,14 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,letterpaper]{article}
 
 % =========================================================
 % PACKAGES
 % =========================================================
-
 \usepackage[
-    top=0.55in,
-    bottom=0.55in,
-    left=0.65in,
-    right=0.65in
+    top=0.50in,
+    bottom=0.50in,
+    left=0.62in,
+    right=0.62in
 ]{geometry}
-
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -20,20 +18,19 @@
 % =========================================================
 % DOCUMENT SETTINGS
 % =========================================================
-
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+\urlstyle{same}
 
 \setlist[itemize]{
-    leftmargin=1.2em,
-    itemsep=1pt,
+    leftmargin=1.15em,
+    itemsep=1.2pt,
     topsep=2pt,
     parsep=0pt,
     partopsep=0pt
 }
 
-% Section formatting
 \titleformat{\section}
     {\large\bfseries}
     {}
@@ -43,174 +40,130 @@
 
 \titlespacing*{\section}
     {0pt}
-    {7pt}
-    {4pt}
+    {6pt}
+    {3pt}
+
+\newcommand{\companyrole}[4]{%
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        \textbf{#1} & \textbf{#2} \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabularx}
+}
+
+\newcommand{\subrole}[2]{%
+    \begin{tabularx}{\textwidth}{@{}X r@{}}
+        \textbf{#1} & #2 \\
+    \end{tabularx}
+}
 
 % =========================================================
 % DOCUMENT
 % =========================================================
-
 \begin{document}
 
 % =========================================================
 % HEADER
 % =========================================================
-
 \begin{center}
-
-    {\LARGE \textbf{Shahid Ismail}}
-
-    \vspace{3pt}
-
-    {\normalsize
-    Electronics and Communication Engineering Student
-    }
-
-    \vspace{4pt}
-
-    \href{mailto:your.email@example.com}{your.email@example.com}
-    \quad | \quad
-    +91 XXXXX XXXXX
-    \quad | \quad
-    \href{https://linkedin.com/in/yourprofile}
-    {linkedin.com/in/yourprofile}
-
+    {\LARGE \textbf{Asker Antony James Antony}}\\[2pt]
+    {\normalsize \textbf{Brand \& Digital Marketing Leader | CPG | E-commerce | Omnichannel Growth}}\\[4pt]
+    Ajax, ON \quad | \quad
+    +1-437-336-7365 \quad | \quad
+    \href{mailto:askerantony@live.com}{askerantony@live.com} \quad | \quad
+    \href{https://www.linkedin.com/in/yourprofile}{LinkedIn}
 \end{center}
 
 % =========================================================
-% PROFILE
+% PROFESSIONAL SUMMARY
 % =========================================================
+\section*{Professional Summary}
+Brand and digital marketing leader with 10+ years of experience spanning CPG, e-commerce, merchandising, product commercialization, and apparel manufacturing. Grew a six-brand consumer health portfolio from \$1.7M to \$3.86M in revenue while managing \$1.59M in annual campaign spend, leading 150+ SKUs, and scaling a cross-functional brand, e-commerce, and creative team from 3 to 8. Hands-on expertise across brand strategy, P\&L, Amazon, Shopify, retail expansion, pricing, NPD, performance marketing, analytics, and go-to-market execution.
 
-\section*{Profile}
+% =========================================================
+% CORE EXPERTISE
+% =========================================================
+\section*{Core Expertise}
+\textbf{Brand \& Portfolio:} Brand strategy, positioning, portfolio/SKU lifecycle, hero SKU development, NPD, launches, packaging, creative direction, GTM planning \quad | \quad
+\textbf{Commercial \& Growth:} P\&L, pricing, promotion, margin optimization, annual planning, budget stewardship, retail expansion, customer acquisition and retention \\
+\textbf{Digital \& Analytics:} Amazon, Shopify, Walmart, paid media, SEO/SEM, CRM, influencer marketing, GA4, Tableau, Power BI, Helium 10, A/B testing, forecasting
 
-Final-year Electronics and Communication Engineering student with
-hands-on experience in embedded systems, ESP32 development,
-communication protocols, and hardware-software integration. Interested
-in Embedded Systems, IoT, Embedded AI, and Cyber-Physical Systems,
-with practical experience developing ESP32-based projects and exposure
-to industrial operations.
+% =========================================================
+% PROFESSIONAL EXPERIENCE
+% =========================================================
+\section*{Professional Experience}
+
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Maplelife Nutrition Corporation} -- Markham, ON & \textbf{Dec 2020 -- Present} \\
+\end{tabularx}
+
+\subrole{Brand \& Digital Marketing Manager}{Dec 2022 -- Present}
+\begin{itemize}
+    \item Own brand strategy and P\&L for a six-brand CPG health supplement portfolio, growing revenue from \$1.7M to \$3.86M (51\% CAGR) through positioning, SKU rationalization, channel expansion, and disciplined portfolio investment.
+    \item Lead annual brand and channel planning across 150+ SKUs, setting revenue, volume, media, pricing, and margin objectives by brand/SKU and aligning marketing, sales, operations, and supply chain against weekly and annual targets.
+    \item Direct 50+ annual paid, organic, retail, and marketplace campaigns representing \$1.59M in spend and \$12.5M in sales, while briefing internal and freelance creative teams on messaging, assets, product benefits, and channel requirements.
+    \item Built Active Green Pro into the flagship brand by concentrating portfolio and media support on high-potential products, driving one hero SKU to more than \$1M in annual Canadian revenue.
+    \item Built pricing and margin models across 120+ SKUs using input costs, channel margins, competitive pricing, marketplace data, and consumer feedback to guide assortment, promotion, and lifecycle decisions.
+    \item Expanded retail distribution by 30\%+ through CHFA trade partnerships and retailer programs, while representing the portfolio at four CHFA trade events and aligning brand plans with retailer strategy and margin requirements.
+    \item Scaled and led an eight-member brand, e-commerce, and creative team from an initial team of three; established campaign briefing, KPI review, testing, and cross-functional processes, and onboarded/trained 10+ employees across marketing and social media.
+    \item Oversee six Shopify stores and multiple brand websites from concept through launch, coordinating UX, content, SEO, merchandising, and brand consistency; also led U.S. and U.K. expansion activities including regulatory/file registration, IP/GS1 setup, and five Amazon export shipments worth \$250K+.
+\end{itemize}
+
+\subrole{Brand \& Digital Marketing Specialist}{May 2022 -- Nov 2022}
+\begin{itemize}
+    \item Increased online revenue 40\% YoY across Amazon, Shopify, and Walmart through full-funnel e-commerce, performance marketing, SEO, pricing, promotion, and assortment optimization for six consumer health brands.
+    \item Improved conversion 20\%, organic traffic 30\%, campaign ROI 18\%, profitability 10\%, and customer retention 25\% by using Google Analytics, Seller Central, Tableau, and marketplace data to refine content, targeting, pricing, and promotions.
+    \item Increased social engagement 22\% through multi-channel social and influencer initiatives and reduced creative production costs 15\% through vendor negotiation and centralized ad-development workflows.
+\end{itemize}
+
+\subrole{Brand \& Digital Marketing Executive (Concurrent with Studies)}{Dec 2020 -- May 2022}
+\begin{itemize}
+    \item Grew e-commerce revenue 10\% by expanding listings across eBay, Walmart, and VitaSave and optimizing product positioning, pricing, fulfillment, and competitive strategy.
+    \item Increased repeat purchases 30\% and email click-through rates 12\% through segmented email and social campaigns; competitive benchmarking identified pricing and promotional opportunities that supported an 8\% market-share improvement.
+\end{itemize}
+
+\companyrole{Everrich Wears}{Mar 2018 -- Sep 2019}{Senior Executive -- Design \& Marketing}{Tiruppur, Tamil Nadu, India}
+\begin{itemize}
+    \item Managed garment product development from tech pack through sampling, costing, approvals, material sourcing, TNA planning, production follow-up, and shipment documentation; delivered 100+ samples on time and improved sample approval rates by 15\%.
+    \item Optimized material utilization, sourcing, and production tracking across 50+ orders, reducing production costs by 8\%, material shortages by 20\%, and delivery delays by 12\% while maintaining export documentation compliance.
+\end{itemize}
+
+\companyrole{Euro Trousers MFG}{Jan 2017 -- Dec 2017}{Assistant Merchandiser}{Sharjah, United Arab Emirates}
+\begin{itemize}
+    \item Coordinated sourcing, sampling, production, QA, approvals, costing, and logistics for 50+ orders and 30+ styles, achieving 95\% on-time delivery and 98\% buyer sample approval.
+    \item Supported seasonal capacity planning, cost negotiation, marker optimization, and buyer communication for Topman, Burton, Next, Farah, and Urban Outfitters, reducing material waste by 8\% and increasing peak-season capacity by 20\%.
+\end{itemize}
+
+\companyrole{Everrich Wears}{Jun 2013 -- Nov 2016}{Executive -- Design \& Marketing}{Tiruppur, Tamil Nadu, India}
+\begin{itemize}
+    \item Managed tech-pack review, sample development, costing, design submissions, fabric/trim coordination, and cross-functional follow-up for 150+ samples, achieving 95\% approval and 90\% on-time style dispatch.
+    \item Worked with CAD and pattern teams on marker planning and costing, reducing material waste by 10\% across 100+ styles and improving first-submission sample approvals through tighter quality and measurement control.
+\end{itemize}
 
 % =========================================================
 % EDUCATION
 % =========================================================
-
 \section*{Education}
-
-\begin{tabularx}{\textwidth}{X r}
-
-\textbf{Kalasalingam Academy of Research and Education}
-&
-\textbf{CGPA: 7.75/10}
-\\
-
-B.Tech in Electronics and Communication Engineering
-&
-India
-\\
-
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Post Graduate Diploma in Management -- Strategic Global Business Management} & \textbf{2020 -- 2022} \\
+    Conestoga College -- Kitchener, ON & \\
+    \textbf{Bachelor of Technology in Apparel Technology} & \textbf{2009 -- 2013} \\
+    Anna University -- Chennai, India & \\
 \end{tabularx}
 
 % =========================================================
-% TECHNICAL SKILLS
+% SELECTED GUEST LECTURES
 % =========================================================
-
-\section*{Technical Skills}
-
-\textbf{Programming:}
-C, Embedded C, Python, Verilog
-
-\hspace{4pt}
-
-\textbf{Embedded Systems:} 
-ESP32, Microcontrollers, UART, I2C, SPI, Bluetooth Low Energy (BLE)
-
-\hspace{4pt}
-
-\textbf{Software \& Tools:}
-MATLAB, Multisim, Linux, Flutter, Firebase
+\section*{Selected Guest Lectures}
+\textbf{Data-Driven Pricing \& Competitive Benchmarking}, Conestoga College \hfill Apr 2024 \\
+Keynote for 30+ postgraduate business students covering pricing analysis, competitor data using Keepa and Helium 10, and margin guardrails.\\[2pt]
+\textbf{Digital Marketing \& E-Commerce Strategy}, Conestoga College \hfill Jul 2023 \\
+Delivered a 90-minute masterclass to 30+ postgraduate students using a Maplelife Nutrition case study covering 150+ SKUs, 80K FBA orders, and a 10\% revenue lift.
 
 % =========================================================
-% PROJECTS
+% CERTIFICATIONS & TECHNOLOGY
 % =========================================================
-
-\section*{Projects}
-
-\textbf{Safe Sight -- AI-Powered Home Security System}
-
-\begin{itemize}
-
-    \item Developed an ESP32-CAM based home security system focused on
-    improving safety and accessibility for visually impaired users.
-
-    \item Integrated camera-based monitoring with embedded hardware to
-    support real-time security applications.
-
-\end{itemize}
-
-
-\textbf{BLE-Based Smart Wheelchair Tracking System}
-
-\begin{itemize}
-
-    \item Developed an ESP32 and Bluetooth Low Energy based wheelchair
-    tracking system using RSSI for location estimation.
-
-    \item Integrated Flutter and Firebase for application-level
-    monitoring, data management, and communication with the embedded
-    system.
-
-\end{itemize}
-
-
-\textbf{Banana Fiber + P L A Biocomposite Filament}
-
-\begin{itemize}
-
-    \item Developed a banana-fiber reinforced PLA biocomposite filament
-    for sustainable 3D printing applications.
-
-    \item Investigated natural-fiber reinforcement as an approach toward
-    sustainable additive manufacturing.
-
-\end{itemize}
-
-% =========================================================
-% INDUSTRIAL EXPERIENCE
-% =========================================================
-
-\section*{Industrial Experience}
-
-\textbf{Z F}   \hfill Apprenticeship
-
-\begin{itemize}
-
-    \item Gained practical industrial exposure through hands-on
-    experience with machine operations and manufacturing processes.
-
-\end{itemize}
-
-% =========================================================
-% RESEARCH
-% =========================================================
-
-\section*{Research}
-
-\textbf{ICECAA 2025}
-
-\begin{itemize}
-
-    \item Presented a research paper at ICECAA 2025.
-
-\end{itemize}
-
-% =========================================================
-% ACTIVITIES
-% =========================================================
-
-\section*{Activities}
-
-\textbf{Hackathons}
-\quad | \quad
-\textbf{University Boxing}
+\section*{Certifications \& Technology}
+\textbf{Certifications:} Amazon Retail for Advertisers; Learn the Fundamentals of Sponsored Ads -- Amazon Advertising; Google Analytics; Data Analytics Fundamentals -- AWS; SEO Foundations; Business Analysis Foundations; Tableau Fundamentals; GLO-BUS Industry Champion \\
+\textbf{Platforms \& Tools:} Shopify Plus, Amazon Seller Central \& DSP, Walmart, WooCommerce, Google Ads, Meta Business Suite, TikTok Ads, LinkedIn Ads, GA4, Tableau, Power BI, Microsoft Access, Helium 10, Keepa, ERP, Batch Master, ClickUp, Adobe Creative Suite, Canva, Figma
 
 \end{document}
