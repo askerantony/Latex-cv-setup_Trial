@@ -1,28 +1,203 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+
+\usepackage[
+    top=0.55in,
+    bottom=0.55in,
+    left=0.65in,
+    right=0.65in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% =========================================================
+% DOCUMENT SETTINGS
+% =========================================================
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{
+    leftmargin=1.2em,
+    itemsep=1pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+% Section formatting
+\titleformat{\section}
+    {\large\bfseries}
+    {}
+    {0pt}
+    {}
+    [\titlerule]
+
+\titlespacing*{\section}
+    {0pt}
+    {7pt}
+    {4pt}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
 
 \begin{document}
 
+% =========================================================
+% HEADER
+% =========================================================
+
 \begin{center}
-    {\LARGE \textbf{Your Name}}\\[5pt]
-    Email: your.email@example.com \\
-    Phone: +91 XXXXX XXXXX \\
-    LinkedIn: linkedin.com/in/yourprofile
+
+    {\LARGE \textbf{Shahid Ismail}}
+
+    \vspace{3pt}
+
+    {\normalsize
+    Electronics and Communication Engineering Student
+    }
+
+    \vspace{4pt}
+
+    \href{mailto:your.email@example.com}
+    {your.email@example.com}
+    \quad | \quad
+    +91 XXXXX XXXXX
+    \quad | \quad
+    \href{https://linkedin.com/in/yourprofile}
+    {linkedin.com/in/yourprofile}
+
 \end{center}
+
+% =========================================================
+% PROFILE
+% =========================================================
+
+\section*{Profile}
+
+Final-year Electronics and Communication Engineering student with hands-on
+experience in embedded systems, ESP32 development, communication protocols,
+and hardware-software integration. Interested in Embedded Systems, IoT,
+Embedded AI, and Cyber-Physical Systems, with practical experience developing
+ESP32-based projects and exposure to industrial operations.
+
+% =========================================================
+% EDUCATION
+% =========================================================
 
 \section*{Education}
 
+\begin{tabularx}{\textwidth}{X r}
+
+\textbf{Kalasalingam Academy of Research and Education}
+&
+\textbf{CGPA: 7.75/10}
+\\
+
 B.Tech in Electronics and Communication Engineering
+&
+India
+\\
 
-\section*{Skills}
+\end{tabularx}
 
-C, Embedded C, Python, Verilog, ESP32, UART, I2C, SPI
+% =========================================================
+% TECHNICAL SKILLS
+% =========================================================
+
+\section*{Technical Skills}
+
+\textbf{Programming:}
+C, Embedded C, Python, Verilog
+
+\hspace{4pt}
+
+\textbf{Embedded Systems:}
+ESP32, Microcontrollers, UART, I2C, SPI, Bluetooth Low Energy (BLE)
+
+\hspace{4pt}
+
+\textbf{Software \& Tools:}
+MATLAB, Multisim, Linux, Flutter, Firebase
+
+% =========================================================
+% PROJECTS
+% =========================================================
 
 \section*{Projects}
 
-\textbf{Project Name} -- Brief description of the project.
+\textbf{Safe Sight -- AI-Powered Home Security System}
 
-\section*{Experience}
+\begin{itemize}
+    \item Developed an ESP32-CAM based home security system focused on improving
+    safety and accessibility for visually impaired users.
+    
+    \item Integrated camera-based monitoring with embedded hardware to support
+    real-time security applications.
+\end{itemize}
 
-Company Name -- Position
+\textbf{BLE-Based Smart Wheelchair Tracking System}
+
+\begin{itemize}
+    \item Developed an ESP32 and Bluetooth Low Energy based wheelchair tracking
+    system using RSSI for location estimation.
+    
+    \item Integrated Flutter and Firebase for application-level monitoring,
+    data management, and communication with the embedded system.
+\end{itemize}
+
+\textbf{Banana Fiber + PLA Biocomposite Filament}
+
+\begin{itemize}
+    \item Developed a banana-fiber reinforced PLA biocomposite filament for
+    sustainable 3D printing applications.
+    
+    \item Investigated natural-fiber reinforcement as an approach toward
+    sustainable additive manufacturing.
+\end{itemize}
+
+% =========================================================
+% EXPERIENCE
+% =========================================================
+
+\section*{Industrial Experience}
+
+\textbf{ZF} \hfill Apprenticeship
+
+\begin{itemize}
+    \item Gained practical industrial exposure through hands-on experience
+    with machine operations and manufacturing processes.
+\end{itemize}
+
+% =========================================================
+% RESEARCH
+% =========================================================
+
+\section*{Research}
+
+\textbf{ICECAA 2025}
+
+\begin{itemize}
+    \item Presented a research paper at ICECAA 2025.
+\end{itemize}
+
+% =========================================================
+% ACTIVITIES
+% =========================================================
+
+\section*{Activities}
+
+\textbf{Hackathons} \quad | \quad
+\textbf{University Boxing}
 
 \end{document}
