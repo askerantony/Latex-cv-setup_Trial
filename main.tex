@@ -4,23 +4,42 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
-\usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=0.18in, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt}
-\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
-\titlespacing*{\section}{0pt}{6pt}{4pt}
+\setlist[itemize,1]{leftmargin=0.2in, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+% second-level list used only for the indented bullet groups under
+% BRAND & MARKETING EXPERTISE / TECHNICAL EXPERTISE subheadings
+\newlist{subitemize}{itemize}{1}
+\setlist[subitemize]{leftmargin=0.45in, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt, label=\textbullet}
+
+% keep a bullet's wrapped lines from splitting across a page break
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+% centered section headers, no rule (matches the Word doc)
+\titleformat{\section}{\centering\bfseries\large}{}{0pt}{}
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+% Company (italic) -- Location -- Date, spread across the line
+\newcommand{\jobheader}[3]{\textit{#1} \hfill #2 \hfill #3}
 
 \begin{document}
 
 \begin{center}
-    {\LARGE\textbf{Asker Antony James Antony}}\\[4pt]
-    Ajax, ON \textbar{} L1T 5A2 \textbar{} +1-437-336-7365 \textbar{} askerantony@live.com \textbar{}
+    {\LARGE\textbf{Asker Antony James Antony}}
 \end{center}
+\noindent\rule{\linewidth}{0.6pt}
+\begin{center}
+    Ajax, ON \textbar{} L1T 5A2 \textbar{} +1-437-336-7365 \textbar{} \href{mailto:askerantony@live.com}{askerantony@live.com}
+\end{center}
+\noindent\rule{\linewidth}{0.6pt}
+\vspace{2pt}
 
 \section*{PROFESSIONAL SUMMARY}
 
@@ -29,7 +48,7 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \section*{PROFESSIONAL EXPERIENCE}
 
 \textbf{Brand \& Digital Marketing Manager – Multi-Brand Portfolio}\\
-\textbf{Maplelife Nutrition Corporation [Markham, ON]} \hfill December 2022-Present
+\jobheader{Maplelife Nutrition Corporation}{[Markham, ON]}{December 2022-Present}
 
 \begin{itemize}
 \item Owned brand strategy and P\&L for a 6-brand CPG health supplement portfolio, growing revenue from \$1.7M to \$3.86M (51\% CAGR) through positioning, SKU rationalization, and channel expansion
@@ -48,10 +67,10 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 
 \textbf{Key Tools \& Technologies:} Shopify \textbar{} Amazon Seller Central \& DSP \textbar{} Meta Ads Manager \textbar{} Google Ads \textbar{} TikTok Ads \textbar{} Tableau \textbar{} Google Analytics 4 \textbar{} Inventory Management System \textbar{} Helium 10 \textbar{} ERP \textbar{} Batch Master \textbar{} Keepa \textbar{} Click up
 
-\vspace{4pt}
+\vspace{6pt}
 
 \textbf{Brand \& Digital Marketing Specialist}\\
-\textbf{Maplelife Nutrition Corporation [Markham, ON]} \hfill May 2022-November 2022
+\jobheader{Maplelife Nutrition Corporation}{[Markham, ON]}{May 2022-November 2022}
 
 \begin{itemize}
 \item Boosted online revenue +40\% YoY by executing full-funnel e-commerce and digital strategies across Amazon, Shopify, and Walmart for six consumer health brands.
@@ -62,8 +81,10 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \item Reduced creative production costs 15\% by negotiating vendor contracts and centralizing ad development workflows.
 \end{itemize}
 
+\vspace{6pt}
+
 \textbf{Brand \& Digital Marketing Executive (Concurrent with Studies)}\\
-\textbf{Maplelife Nutrition Corporation [Markham, ON]} \hfill December 2020-May 2022
+\jobheader{Maplelife Nutrition Corporation}{[Markham, ON]}{December 2020-May 2022}
 
 \begin{itemize}
 \item Accelerated e-commerce revenue +10\% by expanding listings across eBay, Walmart, and VitaSave, optimizing product positioning, pricing, and fulfillment strategies.
@@ -74,8 +95,10 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \item Conducted competitor benchmarking against top health supplement brands, identifying pricing and promotional gaps that informed strategies to improve market share by 8\%.
 \end{itemize}
 
+\vspace{6pt}
+
 \textbf{Senior Executive - Design \& Marketing}\\
-\textbf{Everrich Wears [Tiruppur, Tamil Nadu, India]} \hfill March 2018-September 2019
+\jobheader{Everrich Wears}{[Tiruppur, Tamil Nadu, India]}{March 2018-September 2019}
 
 \begin{itemize}
 \item Developed garment samples from tech packs, ensuring compliance with quality standards and buyer specifications, delivering 100+ samples on time for order bookings.
@@ -91,8 +114,10 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \item Implemented order tracking and shipment monitoring systems, improving documentation accuracy by 15\% and enabling data-driven process optimization that reduced costs by 10\%. Researched industry trends, adopting digital tools for fabric sourcing and production tracking, enhancing supply chain efficiency by 10\%.
 \end{itemize}
 
+\vspace{6pt}
+
 \textbf{Assistant Merchandiser}\\
-\textbf{Euro Trousers MFG [Sharjah, United Arab Emirates]} \hfill January 2017-December 2017
+\jobheader{Euro Trousers MFG}{[Sharjah, United Arab Emirates]}{January 2017-December 2017}
 
 \begin{itemize}
 \item Communicated critical merchandising information to cross-functional teams, aligning fabric sourcing, production, and logistics departments with seasonal goals, improving coordination efficiency.
@@ -106,8 +131,10 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \item Developed seasonal capacity plans with factory managers and departments, optimizing production schedules to handle 20\% more orders during peak seasons. (Brands : Topman, Burton, Next, Farah \& Urban Outfitters )
 \end{itemize}
 
+\vspace{6pt}
+
 \textbf{Executive – Design \& Marketing}\\
-\textbf{Everrich Wears [Tiruppur, Tamil Nadu, India]} \hfill June 2013-November 2016
+\jobheader{Everrich Wears}{[Tiruppur, Tamil Nadu, India]}{June 2013-November 2016}
 
 \begin{itemize}
 \item Evaluated tech packs from buyers, resolving queries and collaborating with the sampling team to develop 150+ samples, achieving a 95\% approval rate.
@@ -123,17 +150,17 @@ Brand \& marketing leader with apparel manufacturing roots (BTech Apparel Techno
 \section*{EDUCATION}
 
 \textbf{Post Graduate Diploma in Management - Strategic Global Business Management (PGDM-SGBM)}\\
-Conestoga College [Kitchener, ON] \hfill 2020-2022
+\jobheader{Conestoga College}{[Kitchener, ON]}{2020-2022}
 
-\vspace{3pt}
+\vspace{6pt}
 
 \textbf{Bachelor of Technology in Apparel Technology}\\
-Anna University [Chennai, India] \hfill 2009-2013
+\jobheader{Anna University}{[Chennai, India]}{2009-2013}
 
 \section*{GUEST LECTURES}
 
 \textbf{Data-Driven Pricing \& Competitive Benchmarking}\\
-Conestoga College (Virtual) \hfill Apr 2024
+\jobheader{Conestoga College}{(Virtual)}{Apr 2024}
 
 \begin{itemize}
 \item Keynote for 30+ business postgrads; walked through pricing analysis framework that captured 8\% market share.
@@ -141,7 +168,7 @@ Conestoga College (Virtual) \hfill Apr 2024
 \end{itemize}
 
 \textbf{Digital Marketing \& E-Commerce Strategy}\\
-Conestoga College (Virtual) \hfill Jul 2023
+\jobheader{Conestoga College}{(Virtual)}{Jul 2023}
 
 \begin{itemize}
 \item Invited by eCommerce Program Coordinator to deliver 90-minute masterclass to 30+ postgraduate diploma students specializing in Digital Marketing \& Supply Chain.
@@ -158,57 +185,57 @@ Conestoga College (Virtual) \hfill Jul 2023
 
 \textbf{Brand Strategy \& Portfolio Management}
 
-\begin{itemize}
+\begin{subitemize}
 \item Brand positioning \textbar{} Portfolio \& SKU lifecycle management \textbar{} Hero SKU development \textbar{} NPD \& launches \textbar{} Packaging \& creative direction
 \item Omnichannel Marketing Strategy \textbar{} GTM Planning \& commercialization \textbar{} Portfolio role strategy
 \item Customer Acquisition \& Retention (LTV Optimization) \textbar{} CRM Lifecycle Automation \textbar{} Budget \& Forecast Ownership
-\end{itemize}
+\end{subitemize}
 
 \textbf{Integrated Marketing \& Connections Planning}
 
-\begin{itemize}
+\begin{subitemize}
 \item Annual brand plan development \textbar{} IMC/360° campaigns (digital, retail, influencer, CRM) \textbar{} Retail \& trade marketing \textbar{} Channel mix \& media optimization \textbar{} Omnichannel retail \& marketplace strategy
-\end{itemize}
+\end{subitemize}
 
 \textbf{Consumer Insights \& Analytics}
 
-\begin{itemize}
+\begin{subitemize}
 \item Consumer and shopper insights \textbar{} Category \& competitive analysis \textbar{} KPI dashboarding \textbar{} A/B testing \textbar{} Forecasting \& demand planning \textbar{} Customer Segmentation \& Insights
-\end{itemize}
+\end{subitemize}
 
 \textbf{Commercial \& P\&L Ownership}
 
-\begin{itemize}
+\begin{subitemize}
 \item P\&L management \textbar{} Pricing \& promo strategy \textbar{} DME/budget stewardship \textbar{} Retailer sell-in \& sell-through support \textbar{} Inventory \& margin optimization
-\end{itemize}
+\end{subitemize}
 
 \textbf{Leadership \& Cross-Functional Collaboration}
 
-\begin{itemize}
+\begin{subitemize}
 \item Team leadership \textbar{} Agency \& vendor management \textbar{} Sales, supply chain \& operations alignment \textbar{} Executive reporting
-\end{itemize}
+\end{subitemize}
 
 \section*{TECHNICAL EXPERTISE}
 
 \textbf{Digital \& Performance Marketing}
 
-\begin{itemize}
+\begin{subitemize}
 \item E-Commerce (Shopify Plus, Amazon, Walmart, WooCommerce) \textbar{} Paid Media (Meta, Google, TikTok, LinkedIn Ads)
 \item SEO/SEM \textbar{} Influencer \& Affiliate Marketing \textbar{} Content \& Conversion Optimization \textbar{} Marketplace Management
-\end{itemize}
+\end{subitemize}
 
 \textbf{Analytics \& Data Intelligence}
 
-\begin{itemize}
+\begin{subitemize}
 \item Marketing Analytics \& Attribution (Google Analytics, Tableau, Power BI, Helium10) \textbar{} Data Visualization \& Forecasting
-\end{itemize}
+\end{subitemize}
 
 \textbf{Technology Stack}
 
-\begin{itemize}
+\begin{subitemize}
 \item Platforms: Shopify Plus, Amazon Seller Central, Google Ads, Meta Business Suite
 \item BI \& Visualization: Tableau, Power BI \& Microsoft Access
 \item Creative Tools: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva, Figma
-\end{itemize}
+\end{subitemize}
 
 \end{document}
