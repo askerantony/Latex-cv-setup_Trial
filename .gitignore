@@ -1,4 +1,16 @@
+# LaTeX generated files
 *.aux
 *.log
 *.out
 *.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.pdf
+
+# Temporary setup backup
+setup-test-backup.ps1
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
