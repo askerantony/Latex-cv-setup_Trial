@@ -80,7 +80,7 @@ $requiredSoftware = @(
 # Ask User For Permission
 # --------------------------------------------
 
-function Ask-YesNo {
+function Confirm-YesNo {
     param(
         [string]$Question
     )
@@ -178,7 +178,7 @@ foreach ($software in $requiredSoftware) {
         Write-Host "[MISSING] $($software.Name)"
         Write-Host "WinGet ID: $($software.Id)"
 
-        $permission = Ask-YesNo "Install $($software.Name) using WinGet?"
+        $permission = Confirm-YesNo "Install $($software.Name) using WinGet?"
 
         if ($permission) {
 
@@ -234,7 +234,7 @@ else {
         Write-Host "[MISSING] LaTeX Workshop"
         Write-Host "Extension ID: $latexWorkshopId"
 
-        $permission = Ask-YesNo "Install LaTeX Workshop extension?"
+        $permission = Confirm-YesNo "Install LaTeX Workshop extension?"
 
         if ($permission) {
 
